@@ -65,54 +65,38 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                                 <option value="<?php echo $row['id']; ?>"><?php echo $row['programa']; ?></option>
                                             <?php } ?>
                                 </select>
-                                <div class="valid-feedback">
-                                    Correcto!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Ingrese el nombre correcto.
-                                </div>
+                                
                             </div>
                         </div>
                         <!-- Datos del Ciclo -->
                         <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-2 col-form-label text-left" for="validationCustom01">Ciclo:</label>
+                            <!-- <label class="col-sm-2 col-form-label text-left" for="validationCustom01">Ciclo:</label> -->
+                            <label class="col-sm-2 col-form-label text-left" for="ciclo">Ciclo:</label>
                             <div class="col-sm-10">
                                 <select class="custom-select" name="ciclo" id="ciclo" required>                                  
-                                        <option value="">Seleccionar</option>
+                                    <option value="">Seleccionar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Datos del Curso -->
+                        <div class="form-group row col-sm-12 col-md-12">
+                            <!-- <label class="col-sm-2 col-form-label text-left" for="validationCustom01">Curso:</label> -->
+                            <label class="col-sm-2 col-form-label text-left" for="curso">Curso:</label>
+                            <div class="col-sm-10">
+                                <select class="custom-select" name="curso" id="curso" required>                                  
+                                    <option value="">Seleccionar</option>
                                 </select>
                             </div>
                         </div>
 
-                        <!-- Datos del Curso -->
-                        <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-2 col-form-label text-left" for="validationCustom02">Curso:</label>
-                            <div class="col-sm-10">
-                                <select class="custom-select" name="curso" id="validationCustom02" required>                                  
-                                    <option value="">Seleccionar</option>
-                                </select>
-                                <!-- <input type="text" class="form-control" id="validationCustom02" minlength="2" name="Apellidos" required> -->
-                                <div class="valid-feedback">
-                                    Correcto!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Ingrese el apellido correcto.
-                                </div>
-                            </div>
-                        </div>
+                        
                         <!-- Datos del Docente -->
                         <div class="form-group row col-sm-12 col-md-12">
                             <label class="col-sm-2 col-form-label text-left" for="validationCustom02">Docente:</label>
                             <div class="col-sm-10">
-                                <select class="custom-select" name="docente" id="validationCustom02" required>                                  
+                                <select class="custom-select" name="docente" id="docente" required>                                  
                                     <option value="">Seleccionar</option>
                                 </select>
-                                <!-- <input type="text" class="form-control" id="validationCustom02" minlength="2" name="dni" required> -->
-                                <div class="valid-feedback">
-                                    Correcto!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Datos incorrectos.
-                                </div>
                             </div>
                         </div>
                         
