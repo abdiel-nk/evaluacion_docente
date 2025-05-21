@@ -33,20 +33,20 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
             <div class="card col-sm-12 m-0 p-0 separadorwilly">
                 <div class="card-header">
                     <h3 class="h1willy">Formulario de evaluación Docente: UPG Ciencias de la Salud</h3>
-                    <center><h3 class="my-0 font-weight-normal h1willy">Sede - Lima</h3></center>
+                    <!-- <center><h3 class="my-0 font-weight-normal h1willy">Sede - Lima</h3></center> -->
                 </div>
                 <div class="card-body">
                     <p class="m-3 text-left">
-                        El candidato a estudiar un programa de la UPG Ciencias de la Salud Maestría de Nutrición Humana con mención en Alimentación basada en Plantas, es el licenciado que muestra el interés en su perfeccionamiento profesional en el área de Nutrición Humana.  
+                        asdasdas
                     </p>
 
-                    <form method="post" class="needs-validation"  action="guardar_entrevista_nutricion_2025_1.php" enctype="multipart/form-data" novalidate>
+                    <form method="post" class="needs-validation"  action="save_ev_doc.php" enctype="multipart/form-data" novalidate>
                         <!-- DNI del alumno  -->
                         <div class="m-3 row text-left"><b> Datos del alumno</b></div>
                         <div class = "form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-2 col-form-label text-left">Ingrese su número de DNI</label>
+                            <label class="col-sm-2 col-form-label text-left">Ingrese DNI</label>
                             <div class="col-sm-10">
-                                <input type="number" class="form-control" id="validationCustom00" minlength="5" name="Entrevistador" required value="">
+                                <input type="number" class="form-control" id="validationCustom00" minlength="5" name="dni" required value="">
                                 <div class="valid-feedback">
                                     Correcto
                                 </div>
@@ -386,11 +386,228 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                             </div>
                         </div>
                         
+                        <div class="form-group row col-sm-12 col-md-12">
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
+                                ¿Qué estrategias aplica para regular el estrés?
+                            </label>
+                                
+                            <div class="col-sm-4 text-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P11" id="inlineRadio11" value="0" required>
+                                    <label class="form-check-label" for="inlineRadio11">0</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P11" id="inlineRadio11" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio11">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P11" id="inlineRadio11" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio11">2</label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Seleccione uno.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row col-sm-12 col-md-12">
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
+                                ¿Qué estrategias aplica para regular el estrés?
+                            </label>
+                                
+                            <div class="col-sm-4 text-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P12" id="inlineRadio12" value="0" required>
+                                    <label class="form-check-label" for="inlineRadio12">0</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P12" id="inlineRadio12" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio12">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P12" id="inlineRadio12" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio12">2</label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Seleccione uno.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row col-sm-12 col-md-12">
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
+                                ¿Qué estrategias aplica para regular el estrés?
+                            </label>
+                                
+                            <div class="col-sm-4 text-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P13" id="inlineRadio13" value="0" required>
+                                    <label class="form-check-label" for="inlineRadio13">0</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P13" id="inlineRadio13" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio13">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P13" id="inlineRadio13" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio13">2</label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Seleccione uno.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row col-sm-12 col-md-12">
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
+                                ¿Qué estrategias aplica para regular el estrés?
+                            </label>
+                                
+                            <div class="col-sm-4 text-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P14" id="inlineRadio14" value="0" required>
+                                    <label class="form-check-label" for="inlineRadio14">0</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P14" id="inlineRadio14" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio14">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P14" id="inlineRadio14" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio14">2</label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Seleccione uno.
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="form-group row col-sm-12 col-md-12">
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
+                                ¿Qué estrategias aplica para regular el estrés?
+                            </label>
+                                
+                            <div class="col-sm-4 text-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P15" id="inlineRadio15" value="0" required>
+                                    <label class="form-check-label" for="inlineRadio15">0</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P15" id="inlineRadio15" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio15">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P15" id="inlineRadio15" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio15">2</label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Seleccione uno.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row col-sm-12 col-md-12">
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
+                                ¿Qué estrategias aplica para regular el estrés?
+                            </label>
+                                
+                            <div class="col-sm-4 text-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P16" id="inlineRadio16" value="0" required>
+                                    <label class="form-check-label" for="inlineRadio16">0</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P16" id="inlineRadio16" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio16">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P16" id="inlineRadio16" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio16">2</label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Seleccione uno.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row col-sm-12 col-md-12">
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
+                                ¿Qué estrategias aplica para regular el estrés?
+                            </label>
+                                
+                            <div class="col-sm-4 text-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P17" id="inlineRadio17" value="0" required>
+                                    <label class="form-check-label" for="inlineRadio17">0</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P17" id="inlineRadio17" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio17">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P17" id="inlineRadio17" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio17">2</label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Seleccione uno.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="form-group row col-sm-12 col-md-12">
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
+                                ¿Qué estrategias aplica para regular el estrés?
+                            </label>
+                                
+                            <div class="col-sm-4 text-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P18" id="inlineRadio18" value="0" required>
+                                    <label class="form-check-label" for="inlineRadio18">0</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P18" id="inlineRadio18" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio18">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P18" id="inlineRadio18" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio18">2</label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Seleccione uno.
+                                </div>
+                            </div>
+                        </div>                        -->
+
+
                         <div class="m-3 row text-left"><b>III. Observaciones</b></div>
                         <div class="form-group row col-sm-12 col-md-12">
                         <label class="col-sm-10 col-form-label text-left" for="validationCustom03">Escriba las observaciones que tenga:</label>
                             <div class="col-sm-12">
-                                <textarea class="form-control" rows="3" name="P11" id="validationCustom03" required></textarea>
+                                <textarea class="form-control" rows="3" name="P18" id="validationCustom03" required></textarea>
                                 <div class="valid-feedback">
                                     Muchas gracias por ingresar una respuesta!
                                 </div>
@@ -406,11 +623,11 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
 
 
 
-                        <strong><i>Puntaje Global: </i><strong><input id="scor" type="text" name="suma"  / >        
+                        <strong><i>Puntaje Global: </i><strong><input id="scor" type="text" name="suma"  />        
 
                 <div class="card-footer bg-transparent ">
                     <div class="input-group row">
-                        <button class="btn btn-primary boton" type="submit">Guardar entrevista</button>
+                        <button class="btn btn-primary boton" type="submit">Guardar</button>
                     </div>
                 </div>
 
@@ -421,7 +638,55 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
     </div>
 
 
+    <!-- Some scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- Script para peticionies y validaciones -->
     <script src="js/peticiones.js"></script>
+    <script>    
+        (function () {
+        'use strict'
+
+        // Get all forms that we want to validate
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop que previene el submit
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        //Calcula el score
+        function calcscore(){
+            var score = 0;
+            $(".form-check-input:checked").each(function(){
+                score+=parseInt($(this).val(),10);
+            });
+            $("input[name=suma]").val(score)
+        }
+        $().ready(function(){
+            $(".form-check-input").change(function(){
+                calcscore()
+            });
+        });
+
+
+    </script>
 
 
 </body>

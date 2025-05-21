@@ -8,6 +8,7 @@ const cbxCurso = document.getElementById('curso')
 cbxCurso.addEventListener("change", getDocentes)
 
 const cbxDocente = document.getElementById('docente')
+cbxDocente.addEventListener("change", getIdDocente)
 
 function fetchAndSetData(url, formData, targetElement){
         return fetch(url, {
@@ -29,13 +30,14 @@ function getCiclos(){
     let formData =  new FormData()
     formData.append('id_programa', programa)
 
-    console.log("soy el programa "+ programa);
-    fetchAndSetData(url, formData, cbxCiclo).then(()=>{
+    console.log("programa ", programa);
+    fetchAndSetData(url, formData, cbxCiclo)
+    // .then(()=>{
         
-        cbxDocente.innerHTML = ''
-        cbxDocente.innerHTML = '<option value="">Seleccionar</option>'
-    })
-    .catch(err => console.log(err))
+    //     cbxDocente.innerHTML = ''
+    //     cbxDocente.innerHTML = '<option value="">Seleccionar</option>'
+    // })
+    // .catch(err => console.log(err))
 
 }
 
@@ -45,7 +47,7 @@ function getCursos(){
     let formData =  new FormData()
     formData.append('id_ciclo', ciclo)
 
-    console.log("soy el curso"+ ciclo)
+    console.log("Ciclo"+ ciclo)
     fetchAndSetData(url, formData, cbxCurso)
 }
 
@@ -56,8 +58,21 @@ function getDocentes(){
     let formData =  new FormData()
     formData.append('id_curso', curso)
 
-    console.log(curso)
+    console.log("curso"+curso)
+    
     fetchAndSetData(url, formData, cbxDocente)
+
+}
+
+function getIdDocente(){
+    let docente = cbxDocente.value
+    let url = 'bd_inter/get_docente.php'
+    let formData =  new FormData()
+    formData.append('id_docente', docente)
+    
+    console.log("docente", docente)
+    fetchAndSetData(url, formData, cbxDocente)
+
 
 }
 
