@@ -1,6 +1,10 @@
 <?php
 require 'bd_inter/conexion.php';
 $programas = $mysqli->query("SELECT id, programa FROM t_programa");
+
+$ciclo = $mysqli->query("SELECT id, ciclo FROM t_ciclo");
+$curso = $mysqli->query("SELECT id, curso FROM t_curso");
+$docente = $mysqli->query("SELECT id, docente FROM t_docente");
 ?>
 
 
@@ -37,7 +41,7 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                 </div>
                 <div class="card-body">
                     <p class="m-3 text-left">
-                        asdasdas
+                       Some intents
                     </p>
 
                     <form method="post" class="needs-validation"  action="save_ev_doc.php" enctype="multipart/form-data" novalidate>
@@ -71,10 +75,13 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                         <!-- Datos del Ciclo -->
                         <div class="form-group row col-sm-12 col-md-12">
                             <!-- <label class="col-sm-2 col-form-label text-left" for="validationCustom01">Ciclo:</label> -->
-                            <label class="col-sm-2 col-form-label text-left" for="ciclo">Ciclo:</label>
+                            <label class="col-sm-2 col-form-label text-left" for="validationCustom00">Ciclo:</label>
                             <div class="col-sm-10">
                                 <select class="custom-select" name="ciclo" id="ciclo" required>                                  
-                                    <option value="">Seleccionar</option>
+                                        <option value="">Seleccionar</option>
+                                            <?php while ($row = $ciclo->fetch_assoc()) { ?>
+                                                <option value="<?php echo $row['id']; ?>"><?php echo $row['ciclo']; ?></option>
+                                            <?php } ?>   
                                 </select>
                             </div>
                         </div>
@@ -92,7 +99,7 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                         
                         <!-- Datos del Docente -->
                         <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-2 col-form-label text-left" for="validationCustom02">Docente:</label>
+                            <label class="col-sm-2 col-form-label text-left" for="docente">Docente:</label>
                             <div class="col-sm-10">
                                 <select class="custom-select" name="docente" id="docente" required>                                  
                                     <option value="">Seleccionar</option>
@@ -494,7 +501,7 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                             </div>
                         </div>
 
-                         <div class="form-group row col-sm-12 col-md-12">
+                        <div class="form-group row col-sm-12 col-md-12">
                             <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
                                 ¿Qué estrategias aplica para regular el estrés?
                             </label>
@@ -647,6 +654,10 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
     <!-- Script para peticionies y validaciones -->
     <script src="js/peticiones.js"></script>
     <script>    
+
+                                                
+        // let id_curso = document
+        
         (function () {
         'use strict'
 
