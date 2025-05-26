@@ -1,0 +1,66 @@
+
+-- Estructura de tabla para la tabla `guardar_evaluación_docente`
+--
+
+CREATE TABLE `ev_doc` (
+  `id` int(11) NOT NULL,
+  `dni` text NOT NULL,
+  `programa` text NOT NULL,
+  `ciclo` text NOT NULL,
+  `curso` text NOT NULL,
+  `docente` text NOT NULL,
+  `P1` text NOT NULL,
+  `P2` text NOT NULL,
+  `P3` text NOT NULL,
+  `P4` text NOT NULL,
+  `P5` text NOT NULL,
+  `P6` text NOT NULL,
+  `P7` text NOT NULL,
+  `P8` text NOT NULL,
+  `P9` text NOT NULL,
+  `P10` text NOT NULL,
+  `P11` text NOT NULL,
+  `P12` text NOT NULL,
+  `P13` text NOT NULL,
+  `P14` text NOT NULL,
+  `P15` text NOT NULL,
+  `P16` text NOT NULL,
+  `P17` text NOT NULL,
+  `P18` text NOT NULL,
+  `score` text NOT NULL,
+  `fecha` datetime NOT NULL,
+  `estado` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `evaluación_docente`
+--
+
+INSERT INTO `entrevista_nutricion_2025_1` (`id`, `entrevistador`, `programa`, `nombres`, `apellidos`, `dni`, `P1`, `P2`, `P3`, `P4`, `P5`, `P6`, `P7`, `P8`, `P9`, `P10`, `P11`, `filial`, `score`, `fecha`, `estado`) VALUES
+(1, 'Mg. Tabita Lozano', 'Maestría en Nutrición Humana con Mención en Alimentación Basada en Plantas, Semipresencial', 'test', 'test', 'test', '1', '1', '1', '2', '2', '2', '2', '2', '2', '2', 'tttttt', 'Lima', '17', '2025-01-20 18:21:02', NULL),
+(2, 'Verificando', 'Maestría en Nutrición Humana con Mención en Alimentación Basada en Plantas, Semipresencial', 'Verificando', 'Verificando', 'Verificando', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', 'asdasdasd', 'Lima', '20', '2025-05-21 16:55:05', NULL);
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `entrevista_nutricion_2025_1`
+--
+ALTER TABLE `ev_doc`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `evaluación_docente`
+--
+ALTER TABLE `entrevista_nutricion_2025_1`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -1,0 +1,88 @@
+CREATE TABLE `t_programa` (
+  `id` smallint NOT NULL,
+  `programa` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+
+INSERT INTO `t_programa`(`id`,`programa`) VALUES
+(1,'Doctorado en Enfermería'),
+(2,'Maestría en Enfermería con Mención en Administración y Gestión'),
+(3,'Maestría en Nutrición Humana con Mención en Alimentación Basada en Plantas');
+
+
+CREATE TABLE `t_ciclo` (
+  `id` smallint NOT NULL,
+  `id_programa` smallint NOT NULL,
+  `ciclo` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+	
+
+INSERT INTO `t_ciclo` (`id`,`id_programa`, `ciclo`) VALUES
+ (1,1,'Ciclo 1'),
+ (2,1,'Ciclo 2'),
+ (3,1,'Ciclo 3'),
+ (4,2,'Ciclo 1'),
+ (5,2,'Ciclo 2'),
+ (6,2,'Ciclo 3');
+
+CREATE TABLE `t_curso` (
+  `id` smallint NOT NULL,
+  `id_ciclo` smallint NOT NULL,
+  `curso` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+
+INSERT INTO `t_curso` (`id`,`id_ciclo`,`curso`) VALUES (1,1,'Cosmovisión de la salud'), (2,1,'Fundamentos teóricos de la ciencia de enfermería'), (3,1,'Revisiones sistemáticas y metaanálisis'), (4,1,'Teorías de enseñanza y aprendizaje');
+
+CREATE TABLE `t_docente` (
+`id` int NOT NULL,
+`id_curso` smallint DEFAULT NULL,
+`docente` varchar(45) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+
+INSERT INTO `t_docente` (`id`,`id_curso`,`docente`) VALUES
+
+(1,1,'Edelweiss Ramal'),
+(2,2,'Marlise De Oliveira Pimentel Lima'),
+(3,3,'Jan Marie Nick'),
+(4,3,'Monica Elisa Meneses La Riva'),
+(5,4,'Maria Angela Paredes Aguirre De Beltran');
+
+
+
+
+Indice para tablas volcada
+
+ALTER TABLE `t_programa`
+  ADD PRIMARY KEY (`id`);
+
+
+ALTER TABLE `t_ciclo`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_ciclo_programa` (`id_programa`);
+
+
+ALTER TABLE `t_curso`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_curso_ciclo` (`id_ciclo`);
+
+
+
+ALTER TABLE `t_docente`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_docente_curso` (`id_curso`);
+
+
+--filtro parar la tablas
+
+ALTER TABLE `t_docente`
+  ADD CONSTRAINT `fk_docente_curso` FOREIGN KEY (`id_curso`) REFERENCES `t_curso` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE `t_curso`
+  ADD CONSTRAINT `fk_curso_ciclo` FOREIGN KEY (`id_ciclo`) REFERENCES `t_ciclo` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+COMMIT;
+
+ALTER TABLE `t_ciclo`
+  ADD CONSTRAINT `fk_ciclo_programa` FOREIGN KEY (`id_programa`) REFERENCES `t_programa` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+COMMIT;
