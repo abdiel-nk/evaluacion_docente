@@ -2,9 +2,9 @@
 require 'bd_inter/conexion.php';
 $programas = $mysqli->query("SELECT id, programa FROM t_programa");
 
-$ciclo = $mysqli->query("SELECT id, ciclo  FROM t_ciclo");
-$curso = $mysqli->query("SELECT id, curso FROM t_curso");
-$docente = $mysqli->query("SELECT id, docente FROM t_docente");
+// $ciclo = $mysqli->query("SELECT id, ciclo  FROM t_ciclo");
+// $curso = $mysqli->query("SELECT id, curso FROM t_curso");
+// $docente = $mysqli->query("SELECT id, docente FROM t_docente");
 ?>
 
 
@@ -37,20 +37,15 @@ $docente = $mysqli->query("SELECT id, docente FROM t_docente");
             <div class="card col-sm-12 m-0 p-0 separadorwilly">
                 <div class="card-header">
                     <h3 class="h1willy">Formulario de evaluación Docente: UPG Ciencias de la Salud</h3>
-                    <!-- <center><h3 class="my-0 font-weight-normal h1willy">Sede - Lima</h3></center> -->
                 </div>
                 <div class="card-body">
-                    <p class="m-3 text-left">
-                        Some intents
-                    </p>
-
                     <form method="post" class="needs-validation"  action="save_ev_doc.php" enctype="multipart/form-data" novalidate>
                         <!-- DNI del alumno  -->
                         <div class="m-3 row text-left"><b> Datos del alumno</b></div>
                         <div class = "form-group row col-sm-12 col-md-12">
                             <label class="col-sm-2 col-form-label text-left">Ingrese DNI</label>
                             <div class="col-sm-10">
-                                <input type="number" class="form-control" id="validationCustom00" maxlength="9" name="dni" required value="">
+                                <input type="number" class="form-control" id="validationCustom00" value="" name="dni" required  maxlength="8" >
                                 <div class="valid-feedback">
                                     Correcto
                                 </div>

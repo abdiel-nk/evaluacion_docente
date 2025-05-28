@@ -96,17 +96,13 @@ function getCiclos() {
 
     fetchAndSetData(url, formData, cbxCiclo)
         .then(() => {
-            // cbxCurso.innerHTML = ''
-            // let defaultOption = document.createElement('option');
-            // defaultOption.value = 0;
-            // defaultOption.innerHTML = "Seleccionarrrarar";
-            // cbxCurso.appendChild(defaultOption);
-            
             cbxCurso.innerHTML = ''
-            cbxCurso.innerHTML = '<option value="">Seleccionar</option>';
             cbxDocente.innerHTML = ''
-            cbxDocente.innerHTML = '<option value="">Seleccionar</option>'
-            
+            let defaultOption = document.createElement('option');
+            defaultOption.value = 0;
+            defaultOption.innerHTML = "Seleccionar";
+            cbxCurso.appendChild(defaultOption);
+            cbxDocente.appendChild(defaultOption);
         })
         .catch(err => console.log(err));
 }
@@ -117,7 +113,15 @@ function getCursos() {
     let formData = new FormData();
     formData.append('id_ciclo', ciclo);
 
-    fetchAndSetData(url, formData, cbxCurso).catch(err => console.log(err));
+    fetchAndSetData(url, formData, cbxCurso)
+    .then(()=>{
+        cbxDocente.innerHTML = '';
+        let defaultOption = document.createElement('option');
+        defaultOption.value = 0;
+        defaultOption.innerHTML = "Seleccionar"
+        cbxDocente.appendChild(defaultOption);
+    })
+    .catch(err => console.log(err));
 }
 
 
