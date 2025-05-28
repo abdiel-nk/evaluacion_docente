@@ -92,15 +92,21 @@ function getCiclos() {
     let programa = cbxPrograma.value;
     let url = 'bd_inter/get_ciclo.php';
     let formData = new FormData();
-    formData.append('id_estado', programa);
+    formData.append('id_programa', programa);
 
     fetchAndSetData(url, formData, cbxCiclo)
         .then(() => {
+            // cbxCurso.innerHTML = ''
+            // let defaultOption = document.createElement('option');
+            // defaultOption.value = 0;
+            // defaultOption.innerHTML = "Seleccionarrrarar";
+            // cbxCurso.appendChild(defaultOption);
+            
             cbxCurso.innerHTML = ''
-            let defaultOption = document.createElement('option');
-            defaultOption.value = 0;
-            defaultOption.innerHTML = "Seleccionar";
-            cbxCurso.appendChild(defaultOption);
+            cbxCurso.innerHTML = '<option value="">Seleccionar</option>';
+            cbxDocente.innerHTML = ''
+            cbxDocente.innerHTML = '<option value="">Seleccionar</option>'
+            
         })
         .catch(err => console.log(err));
 }
@@ -111,8 +117,7 @@ function getCursos() {
     let formData = new FormData();
     formData.append('id_ciclo', ciclo);
 
-    fetchAndSetData(url, formData, cbxCurso)
-        .catch(err => console.log(err));
+    fetchAndSetData(url, formData, cbxCurso).catch(err => console.log(err));
 }
 
 

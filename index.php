@@ -2,7 +2,7 @@
 require 'bd_inter/conexion.php';
 $programas = $mysqli->query("SELECT id, programa FROM t_programa");
 
-$ciclo = $mysqli->query("SELECT id, ciclo FROM t_ciclo");
+$ciclo = $mysqli->query("SELECT id, ciclo  FROM t_ciclo");
 $curso = $mysqli->query("SELECT id, curso FROM t_curso");
 $docente = $mysqli->query("SELECT id, docente FROM t_docente");
 ?>
@@ -41,7 +41,7 @@ $docente = $mysqli->query("SELECT id, docente FROM t_docente");
                 </div>
                 <div class="card-body">
                     <p class="m-3 text-left">
-                       Some intents
+                        Some intents
                     </p>
 
                     <form method="post" class="needs-validation"  action="save_ev_doc.php" enctype="multipart/form-data" novalidate>
@@ -50,7 +50,7 @@ $docente = $mysqli->query("SELECT id, docente FROM t_docente");
                         <div class = "form-group row col-sm-12 col-md-12">
                             <label class="col-sm-2 col-form-label text-left">Ingrese DNI</label>
                             <div class="col-sm-10">
-                                <input type="number" class="form-control" id="validationCustom00" minlength="5" name="dni" required value="">
+                                <input type="number" class="form-control" id="validationCustom00" maxlength="9" name="dni" required value="">
                                 <div class="valid-feedback">
                                     Correcto
                                 </div>
@@ -69,7 +69,6 @@ $docente = $mysqli->query("SELECT id, docente FROM t_docente");
                                                 <option value="<?php echo $row['id']; ?>"><?php echo $row['programa']; ?></option>
                                             <?php } ?>
                                 </select>
-                                
                             </div>
                         </div>
                         <!-- Datos del Ciclo -->
@@ -78,10 +77,7 @@ $docente = $mysqli->query("SELECT id, docente FROM t_docente");
                             <label class="col-sm-2 col-form-label text-left" for="validationCustom00">Ciclo:</label>
                             <div class="col-sm-10">
                                 <select class="custom-select" name="ciclo" id="ciclo" required>                                  
-                                        <option value="">Seleccionar</option>
-                                            <?php while ($row = $ciclo->fetch_assoc()) { ?>
-                                                <option value="<?php echo $row['id']; ?>"><?php echo $row['ciclo']; ?></option>
-                                            <?php } ?>   
+                                    <option value="">Seleccionar</option>
                                 </select>
                             </div>
                         </div>
