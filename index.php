@@ -53,7 +53,7 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                             </div>
                         </div>
                         <!-- Sección del Programa / Ciclo / Curso / Docente -->
-                        <div class="m-3 row text-left" ><b>I. Datos del programa</b></div>  
+                        <div class="m-3 row text-left" ><b> Datos del programa</b></div>  
                         <!-- Datos del Programa  -->            
                         <div class="form-group row col-sm-12 col-md-12">
                             <label class="col-sm-2 col-form-label text-left" for="validationCustom00">Programa:</label>
@@ -67,7 +67,7 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                             </div>
                         </div>
                         <!-- Datos del Ciclo -->
-                        <div class="form-group row col-sm-12 col-md-12">
+                        <div class="form-group row col-sm-12 col-md-12">  
                             <!-- <label class="col-sm-2 col-form-label text-left" for="validationCustom01">Ciclo:</label> -->
                             <label class="col-sm-2 col-form-label text-left" for="validationCustom00">Ciclo:</label>
                             <div class="col-sm-10">
@@ -100,26 +100,24 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                         
 
 
-                        <div class="m-3 row text-left"><b>II. Guía de entrevista de admisión</b></div>
+                        <div class="m-3 row text-left"><b>Instrucciones </b></div>
                         <p class="m-3 text-left">
-                            Marque el casillero que considere conveniente teniendo en cuenta la siguiente valoración: <br>
-                            0 &rarr; Responde de una manera muy difusa o no responde<br>
-                            1 &rarr; Responde pero no hay mucha seguridad o claridad<br>
-                            2 &rarr; Responde con mucha claridad.  
+                           El presente instrumento tiene como objetivo evaluar al docente en las diferentes áreas del ámbito académico. Escriba en el casillero el número (X) que considere conveniente teniendo en cuenta la siguiente escala de evaluación: <br>
+                            1 &rarr; Malo<br>
+                            2 &rarr; Regular<br>
+                            3 &rarr; Bueno <br>
+                            4 &rarr; Muy Bueno <br>
+                            5 &rarr; Excelente <br>
                         </p>
                         <br>
-                        <div class="m-3 row text-left"><b>Motivación para el estudio, conocimientos básicos e interés por desarrollar habilidades.</b></div>
+                        <div class="m-3 row text-left"><b>Área Ético Social</b></div>
 
                         <div class="form-group row col-sm-12 col-md-12">
                             <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio1">
-                                ¿Qué le motiva a estudiar la esta maestría?
+                                1. Utiliza un lenguaje educado y respetuoso en sus interacciones.                            
                             </label>
                                 
                             <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P1" id="inlineRadio1" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio1">0</label>
-                                </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P1" id="inlineRadio1" value="1" required>
                                     <label class="form-check-label" for="inlineRadio1">1</label>
@@ -127,6 +125,18 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P1" id="inlineRadio1" value="2" required>
                                     <label class="form-check-label" for="inlineRadio1">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P1" id="inlineRadio1" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio1">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P1" id="inlineRadio1" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio1">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P1" id="inlineRadio1" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio1">5</label>
                                 </div>
                                 <div class="valid-feedback">
                                     Correcto!
@@ -139,14 +149,10 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
 
                         <div class="form-group row col-sm-12 col-md-12">
                             <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio2">
-                                ¿Qué herramientas y aplicaciones de nutrición conoce?
+                                2. Asiste  puntualmente a las sesiones programadas según horario.
                             </label>
                                 
                             <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P2" id="inlineRadio2" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio2">0</label>
-                                </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P2" id="inlineRadio2" value="1" required>
                                     <label class="form-check-label" for="inlineRadio2">1</label>
@@ -154,6 +160,18 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P2" id="inlineRadio2" value="2" required>
                                     <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P2" id="inlineRadio2" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio2">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P2" id="inlineRadio2" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio2">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P2" id="inlineRadio2" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio2">5</label>
                                 </div>
                                 <div class="valid-feedback">
                                     Correcto!
@@ -166,14 +184,10 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
 
                         <div class="form-group row col-sm-12 col-md-12">
                             <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio3">
-                                ¿Qué habilidad espera desarrollar, al formarse como Maestro en nutrición Humana?
+                                3. Propicia un clima de confianza con los estudiantes.
                             </label>
                                 
                             <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P3" id="inlineRadio3" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio3">0</label>
-                                </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P3" id="inlineRadio3" value="1" required>
                                     <label class="form-check-label" for="inlineRadio3">1</label>
@@ -181,6 +195,18 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P3" id="inlineRadio3" value="2" required>
                                     <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P3" id="inlineRadio3" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P3" id="inlineRadio3" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio3">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P3" id="inlineRadio3" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio3">5</label>
                                 </div>
                                 <div class="valid-feedback">
                                     Correcto!
@@ -191,18 +217,12 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                             </div>
                         </div>
 
-                        <div class="m-3 row text-left"><b>Interés por la investigación</b></div>
-
                         <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio4">
-                                ¿Ha realizado algún trabajo de investigación?
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio3">
+                                4. Demuestra preocupación  y comprensión por los problemas de los alumnos.
                             </label>
                                 
                             <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P4" id="inlineRadio4" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio4">0</label>
-                                </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P4" id="inlineRadio4" value="1" required>
                                     <label class="form-check-label" for="inlineRadio4">1</label>
@@ -210,6 +230,198 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P4" id="inlineRadio4" value="2" required>
                                     <label class="form-check-label" for="inlineRadio4">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P4" id="inlineRadio4" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P4" id="inlineRadio4" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P4" id="inlineRadio4" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio4">5</label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Seleccione uno.
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="form-group row col-sm-12 col-md-12">
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio3">
+                                5. Aplica medidas correctivas personales en privado.
+                            </label>
+                                
+                            <div class="col-sm-4 text-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P5" id="inlineRadio5" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio5">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P5" id="inlineRadio5" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio5">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P5" id="inlineRadio5" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio5">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P5" id="inlineRadio5" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio5">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P5" id="inlineRadio5" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Seleccione uno.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- sección 2 -->
+                        <div class="m-3 row text-left"><b>Área de Desempeño Profesional</b></div>
+
+                        <div class="form-group row col-sm-12 col-md-12">
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio6">
+                                1.  Entrega oportunamente el sílabo y orienta el desarrollo del curso.
+                            </label>
+                                
+                            <div class="col-sm-4 text-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P6" id="inlineRadio6" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio6">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P6" id="inlineRadio6" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio6">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P6" id="inlineRadio6" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio6">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P6" id="inlineRadio6" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio6">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P6" id="inlineRadio6" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio6">5</label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Seleccione uno.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row col-sm-12 col-md-12">
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio7">
+                                2.  Desarrolla la asignatura según lo planificado.
+                            </label>
+                                
+                            <div class="col-sm-4 text-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P7" id="inlineRadio7" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio7">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P7" id="inlineRadio7" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio7">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P7" id="inlineRadio7" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio7">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P7" id="inlineRadio7" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio7">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P7" id="inlineRadio7" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio7">5</label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Seleccione uno.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row col-sm-12 col-md-12">
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio8">
+                                3.  Demuestra dominio de los contenidos.
+                            </label>
+                                
+                            <div class="col-sm-4 text-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P8" id="inlineRadio8" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio8">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P8" id="inlineRadio8" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio8">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P8" id="inlineRadio8" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio8">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P8" id="inlineRadio8" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio8">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P8" id="inlineRadio8" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio8">5</label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Correcto!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Seleccione uno.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row col-sm-12 col-md-12">
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio9">
+                                4.  Utiliza metodologías que favorecen el aprendizaje significativo y colaborativo
+                            </label>
+                                
+                            <div class="col-sm-4 text-right">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P9" id="inlineRadio9" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio9">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P9" id="inlineRadio9" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio9">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P9" id="inlineRadio9" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio9">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P9" id="inlineRadio9" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio9">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P9" id="inlineRadio9" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio9">5</label>
                                 </div>
                                 <div class="valid-feedback">
                                     Correcto!
