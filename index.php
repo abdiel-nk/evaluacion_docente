@@ -433,152 +433,11 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                         </div>
 
                         <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio5">
-                                ¿Qué buscadores de información en la web utiliza?
-                            </label>
-                                
-                            <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P5" id="inlineRadio5" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio5">0</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P5" id="inlineRadio5" value="1" required>
-                                    <label class="form-check-label" for="inlineRadio5">1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P5" id="inlineRadio5" value="2" required>
-                                    <label class="form-check-label" for="inlineRadio5">2</label>
-                                </div>
-                                <div class="valid-feedback">
-                                    Correcto!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Seleccione uno.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="m-3 row text-left"><b>Habilidades sociales y de comunicación aceptables</b></div>
-                        <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio6">
-                                ¿Qué estrategias conoce para solucionar un problema?
-                            </label>
-                                
-                            <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P6" id="inlineRadio6" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio6">0</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P6" id="inlineRadio6" value="1" required>
-                                    <label class="form-check-label" for="inlineRadio6">1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P6" id="inlineRadio6" value="2" required>
-                                    <label class="form-check-label" for="inlineRadio6">2</label>
-                                </div>
-                                <div class="valid-feedback">
-                                    Correcto!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Seleccione uno.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio7">
-                                ¿Cuáles son los elementos claves para una buena comunicación?
-                            </label>
-                                
-                            <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P7" id="inlineRadio7" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio7">0</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P7" id="inlineRadio7" value="1" required>
-                                    <label class="form-check-label" for="inlineRadio7">1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P7" id="inlineRadio7" value="2" required>
-                                    <label class="form-check-label" for="inlineRadio7">2</label>
-                                </div>
-                                <div class="valid-feedback">
-                                    Correcto!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Seleccione uno.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="m-3 row text-left"><b>Práctica de valores cristianos, vocación de servicio y empatía</b></div>
-                        <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio8">
-                                ¿Qué significa para usted "Práctica de valores cristianos"? ¿Cómo lo aplica? ¿Qué valores lo identifican?
-                            </label>
-                                
-                            <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P8" id="inlineRadio8" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio8">0</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P8" id="inlineRadio8" value="1" required>
-                                    <label class="form-check-label" for="inlineRadio8">1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P8" id="inlineRadio8" value="2" required>
-                                    <label class="form-check-label" for="inlineRadio8">2</label>
-                                </div>
-                                <div class="valid-feedback">
-                                    Correcto!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Seleccione uno.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="m-3 row text-left"><b>Salud física y mental</b></div>
-                        <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio9">
-                                ¿Qué actividades realiza para conservar su salud física?¿Controla el estado de su salud cada año?
-                            </label>
-                                
-                            <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P9" id="inlineRadio9" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio9">0</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P9" id="inlineRadio9" value="1" required>
-                                    <label class="form-check-label" for="inlineRadio9">1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P9" id="inlineRadio9" value="2" required>
-                                    <label class="form-check-label" for="inlineRadio9">2</label>
-                                </div>
-                                <div class="valid-feedback">
-                                    Correcto!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Seleccione uno.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row col-sm-12 col-md-12">
                             <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
-                                ¿Qué estrategias aplica para regular el estrés?
+                                5.  Fomenta el desarrollo del pensamiento crítico y creativo.
                             </label>
                                 
                             <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P10" id="inlineRadio10" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio10">0</label>
-                                </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P10" id="inlineRadio10" value="1" required>
                                     <label class="form-check-label" for="inlineRadio10">1</label>
@@ -587,6 +446,18 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                     <input class="form-check-input" type="radio" name="P10" id="inlineRadio10" value="2" required>
                                     <label class="form-check-label" for="inlineRadio10">2</label>
                                 </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P10" id="inlineRadio10" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio10">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P10" id="inlineRadio10" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio10">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P10" id="inlineRadio10" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio10">5</label>
+                                </div>
                                 <div class="valid-feedback">
                                     Correcto!
                                 </div>
@@ -595,17 +466,13 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
-                                ¿Qué estrategias aplica para regular el estrés?
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio11">
+                                6.  Promueve el trabajo en equipo.
                             </label>
                                 
                             <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P11" id="inlineRadio11" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio11">0</label>
-                                </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P11" id="inlineRadio11" value="1" required>
                                     <label class="form-check-label" for="inlineRadio11">1</label>
@@ -614,6 +481,18 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                     <input class="form-check-input" type="radio" name="P11" id="inlineRadio11" value="2" required>
                                     <label class="form-check-label" for="inlineRadio11">2</label>
                                 </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P11" id="inlineRadio11" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio11">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P11" id="inlineRadio11" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio11">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P11" id="inlineRadio11" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio11">5</label>
+                                </div>
                                 <div class="valid-feedback">
                                     Correcto!
                                 </div>
@@ -624,15 +503,11 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                         </div>
 
                         <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
-                                ¿Qué estrategias aplica para regular el estrés?
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio12">
+                                7.   Utiliza adecuados recursos didácticos.
                             </label>
                                 
                             <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P12" id="inlineRadio12" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio12">0</label>
-                                </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P12" id="inlineRadio12" value="1" required>
                                     <label class="form-check-label" for="inlineRadio12">1</label>
@@ -641,6 +516,19 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                     <input class="form-check-input" type="radio" name="P12" id="inlineRadio12" value="2" required>
                                     <label class="form-check-label" for="inlineRadio12">2</label>
                                 </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P12" id="inlineRadio12" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio12">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P12" id="inlineRadio12" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio12">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P12" id="inlineRadio12" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio12">5</label>
+                                </div>
+                    
                                 <div class="valid-feedback">
                                     Correcto!
                                 </div>
@@ -651,15 +539,11 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                         </div>
 
                         <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
-                                ¿Qué estrategias aplica para regular el estrés?
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio13">
+                                8.  Realiza evaluaciones coherentes con las competencias de la asignatura y contenidos desarrollados.
                             </label>
                                 
                             <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P13" id="inlineRadio13" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio13">0</label>
-                                </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P13" id="inlineRadio13" value="1" required>
                                     <label class="form-check-label" for="inlineRadio13">1</label>
@@ -668,6 +552,19 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                     <input class="form-check-input" type="radio" name="P13" id="inlineRadio13" value="2" required>
                                     <label class="form-check-label" for="inlineRadio13">2</label>
                                 </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P13" id="inlineRadio13" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio13">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P13" id="inlineRadio13" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio13">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P13" id="inlineRadio13" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio13">5</label>
+                                </div>
+                    
                                 <div class="valid-feedback">
                                     Correcto!
                                 </div>
@@ -676,17 +573,13 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
-                                ¿Qué estrategias aplica para regular el estrés?
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio14">
+                                9. Entrega exámenes y trabajos revisados a tiempo.
                             </label>
                                 
                             <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P14" id="inlineRadio14" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio14">0</label>
-                                </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P14" id="inlineRadio14" value="1" required>
                                     <label class="form-check-label" for="inlineRadio14">1</label>
@@ -695,6 +588,19 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                     <input class="form-check-input" type="radio" name="P14" id="inlineRadio14" value="2" required>
                                     <label class="form-check-label" for="inlineRadio14">2</label>
                                 </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P14" id="inlineRadio14" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio14">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P14" id="inlineRadio14" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio14">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P14" id="inlineRadio14" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio14">5</label>
+                                </div>
+                    
                                 <div class="valid-feedback">
                                     Correcto!
                                 </div>
@@ -702,18 +608,18 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                     Seleccione uno.
                                 </div>
                             </div>
-                        </div>
+                        </div>                           
+                        
+
+                    
+                        <div class="m-3 row text-left"><b>Área Espiritual</b></div>
 
                         <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
-                                ¿Qué estrategias aplica para regular el estrés?
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio15">
+                                1. Realiza reflexiones espirituales antes o durante el desarrollo de las clases
                             </label>
                                 
                             <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P15" id="inlineRadio15" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio15">0</label>
-                                </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P15" id="inlineRadio15" value="1" required>
                                     <label class="form-check-label" for="inlineRadio15">1</label>
@@ -722,6 +628,18 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                     <input class="form-check-input" type="radio" name="P15" id="inlineRadio15" value="2" required>
                                     <label class="form-check-label" for="inlineRadio15">2</label>
                                 </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P15" id="inlineRadio15" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio15">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P15" id="inlineRadio15" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio15">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P15" id="inlineRadio15" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio15">5</label>
+                                </div>
                                 <div class="valid-feedback">
                                     Correcto!
                                 </div>
@@ -732,15 +650,11 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                         </div>
 
                         <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
-                                ¿Qué estrategias aplica para regular el estrés?
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio16">
+                                2. Promueve los valores cristianos.
                             </label>
                                 
                             <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P16" id="inlineRadio16" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio16">0</label>
-                                </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P16" id="inlineRadio16" value="1" required>
                                     <label class="form-check-label" for="inlineRadio16">1</label>
@@ -749,6 +663,18 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                     <input class="form-check-input" type="radio" name="P16" id="inlineRadio16" value="2" required>
                                     <label class="form-check-label" for="inlineRadio16">2</label>
                                 </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P16" id="inlineRadio16" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio16">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P16" id="inlineRadio16" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio16">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="P16" id="inlineRadio16" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio16">5</label>
+                                </div>
                                 <div class="valid-feedback">
                                     Correcto!
                                 </div>
@@ -756,18 +682,14 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                     Seleccione uno.
                                 </div>
                             </div>
-                        </div>
-
+                        </div>   
+                        
                         <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
-                                ¿Qué estrategias aplica para regular el estrés?
+                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio17">
+                                3. Actúa de acuerdo con los principios éticos - cristianos.                  
                             </label>
                                 
                             <div class="col-sm-4 text-right">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P17" id="inlineRadio17" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio17">0</label>
-                                </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="P17" id="inlineRadio17" value="1" required>
                                     <label class="form-check-label" for="inlineRadio17">1</label>
@@ -776,32 +698,17 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                     <input class="form-check-input" type="radio" name="P17" id="inlineRadio17" value="2" required>
                                     <label class="form-check-label" for="inlineRadio17">2</label>
                                 </div>
-                                <div class="valid-feedback">
-                                    Correcto!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Seleccione uno.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="form-group row col-sm-12 col-md-12">
-                            <label class="col-sm-12 col-md-8 col-form-label text-left" for="inlineRadio10">
-                                ¿Qué estrategias aplica para regular el estrés?
-                            </label>
-                                
-                            <div class="col-sm-4 text-right">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P18" id="inlineRadio18" value="0" required>
-                                    <label class="form-check-label" for="inlineRadio18">0</label>
+                                    <input class="form-check-input" type="radio" name="P17" id="inlineRadio17" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio17">3</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P18" id="inlineRadio18" value="1" required>
-                                    <label class="form-check-label" for="inlineRadio18">1</label>
+                                    <input class="form-check-input" type="radio" name="P17" id="inlineRadio17" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio17">4</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="P18" id="inlineRadio18" value="2" required>
-                                    <label class="form-check-label" for="inlineRadio18">2</label>
+                                    <input class="form-check-input" type="radio" name="P17" id="inlineRadio17" value="5" required>
+                                    <label class="form-check-label" for="inlineRadio17">5</label>
                                 </div>
                                 <div class="valid-feedback">
                                     Correcto!
@@ -810,8 +717,7 @@ $programas = $mysqli->query("SELECT id, programa FROM t_programa");
                                     Seleccione uno.
                                 </div>
                             </div>
-                        </div>                        -->
-
+                        </div> 
 
                         <div class="m-3 row text-left"><b>III. Observaciones</b></div>
                         <div class="form-group row col-sm-12 col-md-12">
