@@ -9,3 +9,7 @@ font-size: 1px;
 #scor:focus-within{
     outline: none;
 }
+.input-group{
+    justify-content: space-around;
+    align-items: center;
+}
