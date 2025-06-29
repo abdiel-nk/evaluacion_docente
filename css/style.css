@@ -1,0 +1,11 @@
+#scor{
+border:none;
+color:rgb(255, 255, 255);
+font-size: 1px;
+}
+#scor:focus{
+    outline:none;
+}
+#scor:focus-within{
+    outline: none;
+}
