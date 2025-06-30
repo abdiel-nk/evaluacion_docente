@@ -1,10 +1,6 @@
 <?php
 require 'bd_inter/conexion.php';
 $programas = $mysqli->query("SELECT id, programa FROM t_programa");
-
-// $ciclo = $mysqli->query("SELECT id, ciclo  FROM t_ciclo");
-// $curso = $mysqli->query("SELECT id, curso FROM t_curso");
-// $docente = $mysqli->query("SELECT id, docente FROM t_docente");
 ?>
 
 
