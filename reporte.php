@@ -48,7 +48,9 @@
                     INNER JOIN t_ciclo
                 ON ev_doc.ciclo = t_ciclo.id
                     INNER JOIN  t_docente
-                ON ev_doc.docente = t_docente.id;
+                ON ev_doc.docente = t_docente.id
+
+                ORDER BY id;
                 "
                 ;
                 $result = mysqli_query($mysqli, $sql);
