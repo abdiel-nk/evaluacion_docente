@@ -51,22 +51,20 @@
                 ON ev_doc.docente = t_docente.id;
                 "
                 ;
-
                 $result = mysqli_query($mysqli, $sql);
-        
         ?>
-        <div class="table-styledaa">
-        <table id="myTable" class="table table-sm table-bordered table-striped">
-            <thead class="table-group-divider">
+        <div class="table-styled">
+        <button class="btn btn-success" id="exportButton">Exportar</button>
+
+        <table id="myTable" class="table table-bordered">
+            <thead class="">
                 <tr>
-                    <strong>
-                    <th>#</th>
+                    <th >#</th>
                     <th>Programa</th>
                     <th>Curso</th>
                     <th class="text-center">Ciclo</th>
                     <th>Docente</th>
                     <th>Nota</th>
-                    </strong>
                 </tr>
             </thead>
             <?php 
@@ -85,14 +83,34 @@
             <?php }
             mysqli_close($mysqli) ?>   
         </table>
+        
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <script>
-        /* Initialization of datatables */
-        // $(document).ready(function () {
-        //     $('#myTable').DataTable();
-        // });
+    document.getElementById('exportButton').addEventListener('click', function() {
+        var table = document.getElementById('myTable');
+        var workbook = XLSX.utils.table_to_book(table, { sheet: "SheetJS" });
+        XLSX.writeFile(workbook, 'reporte_evdoc_2025-1.xlsx');
+    });
     </script>
+    <!-- 
+    <script>
+    $(document).ready(function() {
+    $("#myTable").tableExport({
+        mso: {  type:'xlsx',
+        fileName: 'reporte docente',
+        fileFormat: 'xlsx',
+        worksheetName: 'Reporte Evaluación Docente 2025 - 1 '
+    }
+    });
+    $('#exportButton').click(function(){
+        $("#myTable").tableExport();
+    });
+    });
+    </script> -->
+
 </body>
     
 </html>

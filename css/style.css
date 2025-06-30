@@ -22,13 +22,14 @@ h1{
 
 .table-styled{
     padding: 20px;
-    border-radius: .8rem;
-    box-shadow: 2px 2px 2px 1px rgba(231, 3, 3, 0.2);
+    border-radius: .4rem;
 }
 table{
     border: 1px solid rgb(136, 136, 136); 
-    border-radius: .8rem;
+    border-radius: .4rem;
     overflow: hidden;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 thead{
     background-color: rgb(254, 185, 11);
@@ -44,8 +45,14 @@ thead th{
 tbody th{
     font-size: 15px;
     font-weight: 400;
+    padding: 20px;
     
 }
 tbody #ciclo{
     width: 100px;
+}
+
+.btn{
+    
+    margin-bottom: 20px;
 }
